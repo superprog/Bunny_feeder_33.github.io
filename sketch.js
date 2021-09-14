@@ -54,7 +54,8 @@ function preload()
 }
 
 function setup() {
-  var isMobile=/iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
   if(isMobile){
     canW=displayWidth;
     canH=displayHeight;
@@ -98,7 +99,7 @@ function setup() {
   rope = new Rope(8,{x:40,y:30});
   rope2 = new Rope(7,{x:370,y:40});
   rope3 = new Rope(4,{x:400,y:225});
-  ground = new Ground(canW/2,canH,canW,20);
+  ground = new Ground(200,canH,600,20);
 
   blink.frameDelay = 20;
   eat.frameDelay = 20;
